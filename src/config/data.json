@@ -1,0 +1,143 @@
+[
+    {
+        "id": "work1",
+        "title": "配列の総和",
+        "description": "配列の数値を合計してください。\r\n・各数値は0 <= n <= 100\r\n・配列の数は 1 <= n <= 100\r\n・数値は文字列で送られてきます",
+        "data": [
+            [
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX193WEdHnZtkzH/yTHg6JwJrvJ5pjohbiCo=",
+                "U2FsdGVkX19ZfNNNg+Pnxg5aU08zB3nVWZaLDWYnO3s="
+            ],
+            [
+                "U2FsdGVkX1+cX1PKM3dUGNlq++b/+NRvkswrrBCec/c=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1/IUOFPWxM5GV9UOYY/nT9NdcrLXXl3cFw="
+            ],
+            [
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1+XTAbMNsZM3z6t9+3mZqioFlW4QEoMqcY=",
+                "U2FsdGVkX1/D9AYJmSHX630twDJGx+56T2G6hsdOUk0=",
+                "U2FsdGVkX1/JDOTvSJi1JMsm7sgKJ9yvEXMcqSzkZw8="
+            ]
+        ],
+        "answer": [
+            "U2FsdGVkX19hxo/MYLTXhSdj6B8n2o06caSgdGMdpug=",
+            "U2FsdGVkX19srb/w4JDoTcWc1aE65qUn0jOpgrkTYMQ=",
+            "U2FsdGVkX19ZfNNNg+Pnxg5aU08zB3nVWZaLDWYnO3s="
+        ]
+    },
+    {
+        "id": "work2",
+        "title": "文字列を反転",
+        "description": "文字列を反転し、文字列として返してください。",
+        "data": [
+            ["U2FsdGVkX18GMfsoGl9o8vBZIcOZ4ejJSNi4fUsMz6Y="],
+            ["U2FsdGVkX1+PuBrLt0ry6+N82BJZvwBO5UjLS7vcQc8="],
+            ["U2FsdGVkX1+EAfIR1oGZ96wpTzRuQByVHh4fnrYdkGM="]
+        ],
+        "answer": [
+            "U2FsdGVkX1+avkRy1q9i/Pmlbr39pUz/wgMBGDSFDMo=",
+            "U2FsdGVkX1/yYAl3eqyBQMbBQR73DORu0gmZHmE/HMA=",
+            "U2FsdGVkX1+Ze9EnCQ87grWXGcUxiT3fV8D2mp6dSt0="
+        ]
+    },
+    {
+        "id": "work3",
+        "title": "三角形の面積",
+        "description": "配列に三角形の座標が入ったものが送られてきます。数値を元に面積を求めてください。\r\n・Array[0] 左下のX座標\r\n・Array[1] 右下のX座標\r\n・Array[2]上のY座標\r\n・数値は文字列で送られてきます\r\n・左下と右下のY座標は0とします",
+        "data": [
+            [
+                "U2FsdGVkX18H8blBwCIF6UCtRN4nCguPpTfcBVXCt+c=",
+                "U2FsdGVkX19mRlMS0IJPUIhY7OSseMA2A0Bg5g3KRho=",
+                "U2FsdGVkX18pgipdgvCHp8r21Z2Z015HcD2UIExZvrY="
+            ],
+            [
+                "U2FsdGVkX1+h8i5yqL17Z2D9YK+YkbOcpPvKGVQUpIE=",
+                "U2FsdGVkX1+gNEUH+dDBFJqtUiPiL+wSOXb9FN8tqBk=",
+                "U2FsdGVkX19ZFVNhV5lIOlgV/vkQpGkyixwjUYKN1CI="
+            ],
+            [
+                "U2FsdGVkX1/r+er784vNrnfL8+TEbYQpSkmmImlRsZY=",
+                "U2FsdGVkX19kj4syEycKG9KMZAzepYxVn6fW+a9Vp6g=",
+                "U2FsdGVkX182fgWCO0bfpKd+60CyrYV6Eyq0JSwZvi0="
+            ]
+        ],
+        "answer": [
+            "U2FsdGVkX1+l6BegJCxVmxupc24YjgmriGYQm5eNjlA=",
+            "U2FsdGVkX1+Xf1lnagnEk15ZxBhpEy6XDQLO7AD7pJg=",
+            "U2FsdGVkX18rswNRFqjTVfevZ1ZJDhlhZc3qkZcKnjA="
+        ]
+    },
+    {
+        "id": "work4",
+        "title": "次最大値最小値",
+        "description": "配列に数値が入ったものが送られてきます。\r\n配列の中で２番目に大きいものと２番目に小さいものを抽出してください。\r\n・数値は文字列で送られてきます\r\n・回答は文字列で「２番目に大きい[半角スペース]２番目に小さい」という形で返してください",
+        "data": [
+            [
+                "U2FsdGVkX18LZoH9hAexqf4yvEJF36WaspQBgi8CKgg=",
+                "U2FsdGVkX18qCgikQWDqUfpOfB9G67ip4FZkLFgK8uk=",
+                "U2FsdGVkX19Qb4ORijxeL+HQesS+zneTyDYJ9a3ODWU=",
+                "U2FsdGVkX1/td2v4QTPPzzVIDHcyevBZx0/OT+lX1HU=",
+                "U2FsdGVkX18WTILWN6CEZurslnWiHoTlGh2ah08pVJw="
+            ],
+            [
+                "U2FsdGVkX1+wSh85riAVIBs74Q5Q5YNkZtQuGIxd6ZU=",
+                "U2FsdGVkX19GrIirGvcarqGddNyboSWPZkU96e5p6Sg=",
+                "U2FsdGVkX19ulXsCJhxZPM6Gu0z67IyxiylLnjLEVdY=",
+                "U2FsdGVkX19aRylxOq9Nm7lOasx7oWKeNDRvu3Nnvb0=",
+                "U2FsdGVkX18CZx8K9ZRi5WZuFyLNRx3m5hH5FkSyrds="
+            ],
+            [
+                "U2FsdGVkX18kevJU7ocaWKA6DeOTOmeDzXSW27A5rco=",
+                "U2FsdGVkX1+YQOWMk/dZ7csKccw+ZJyC9DEsY9/GsXc=",
+                "U2FsdGVkX19YDsrMntbKTlrgUh2/BXyw5dJn1QeWYfw=",
+                "U2FsdGVkX1/iNN+v8SspEwXs8BKxvcrUabxnXymgfog=",
+                "U2FsdGVkX19qQsHGk95TKuC24ntORJMFLTVa42/feX0=",
+                "U2FsdGVkX19RHAl4A+bMJr72EWC4DE1yxh77Mkz0Uf4=",
+                "U2FsdGVkX19muLWK29FeYFcHnTBPAzr+gKyrdZNQfLg="
+            ]
+        ],
+        "answer": [
+            "U2FsdGVkX19XPMh3whXFsv+YcedUcn8SJ1PfAHal71w=",
+            "U2FsdGVkX1/wyL/MWkm4+bByA7nxtiUZnMBuJiFNJlY=",
+            "U2FsdGVkX1/vmlLXc2b2IMwy1U7o8sGZ1KVX5tuTXiY="
+        ]
+    },
+    {
+        "id": "work5",
+        "title": "ミックス文字列",
+        "description": "配列に２つの文字列が入ったものが送られてきます。\r\n[0]の文字列から1文字づつ交互に並び替えて返してください。\r\nどちらかの文字列が長い場合は残りの文字列をそのまま出力してください",
+        "data": [
+            ["U2FsdGVkX19OGGzgC5CDnFTaSPo8pZiqbV4qvqzLd0I=", "U2FsdGVkX1/MrlrvzF6gfyzqQmAw7Hhc0DHwHe2Vkz4="],
+            ["U2FsdGVkX1+uE+z4V9+YuD21nPGkcKsttIWSJAusZSE=", "U2FsdGVkX1+Sm3xC10v1Fk5XCZZdNR033FdgQ01g3EA="],
+            [
+                "U2FsdGVkX198Ybn5c31KHQk4xI04fOhDI2JWpGRU/H8=",
+                "U2FsdGVkX1+NP4CxjWwNRBPsUKEWO5CVdo66umHHmlARiz57EXpc/z8Hx53WdlmH"
+            ]
+        ],
+        "answer": [
+            "U2FsdGVkX1/z+bITm2NEOsbYGVm+qjNPgUISSdY37E0=",
+            "U2FsdGVkX18hiqphU5X2e2+xlMSzjYwegwy1nB0mo5ATpyRHktNJb3T+OuJDbFIK",
+            "U2FsdGVkX1/Oiqf7bGTpKyH5sgjM5ZM137MKtN1sn5uYVNyJ41x5yec5Ml6YD0g+"
+        ]
+    },
+    {
+        "id": "work6",
+        "description": "配列に小文字のアルファベットが25種類記述された文字列が送られてきます。\r\n1種類足りていないアルファベットを出力してください。",
+        "data": [
+            ["U2FsdGVkX1/+OqS4LTe7DWf/uwuN8KU5xqY64dyqzzqNHxtQGOG8nt4JACnyH6K5"],
+            ["U2FsdGVkX18Bn7UySquxE9IJ9GmGSHo1/EQZMSdiT1dRePksELuax9lHHa7N52Uq"],
+            ["U2FsdGVkX18L/kA6qa17l4DHc9l0bNvTTnlEwQgNPI7U6Uv7/KoKmI2tQDpgjlYp"]
+        ],
+        "answer": [
+            "U2FsdGVkX1/ZE+MBCO4sNbYKsvIKuaeP1mjRuteBRUY=",
+            "U2FsdGVkX18mnaU5vmPpwN/57brzi21Xy6oRIHVd068=",
+            "U2FsdGVkX1+O8HRcYGQV/roHmp69OJoltuhQBaZHees="
+        ]
+    }
+]
