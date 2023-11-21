@@ -15,6 +15,7 @@
 -   基本ウェブ検索、ChatGPT 等の AI 使用禁止
 -   `/src/answer.ts` に記述する
 -   String を Return する
+-   CHECK が全て ⭕️ になれば正解
 
 ## 問題の作成方法
 
@@ -30,4 +31,6 @@
 }
 ```
 
--   main.ts で複合している部分を暗号化に切り替え、console で出力し、暗号化したものを data.json に記述する
+-   data の中に与えられる値を String 配列で記入
+-   answer の中に data によって導き出される正解を String 配列で記入（data の数と answer の数を一致させる）
+-   main.ts で複合している部分を暗号化に切り替え、console で出力し、暗号化したものを data.json に記述しなおす
