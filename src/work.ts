@@ -74,7 +74,7 @@ export class Work {
     get comparison(): boolean[] {
         const comparison = [];
         for (let i = 0; i < this.decryptQuestions.length; i++) {
-            comparison.push(answer(this.decryptAnswers[i]) === this.decryptAnswers[i]);
+            comparison.push(answer(this.decryptQuestions[i]) === this.decryptAnswers[i]);
         }
         return comparison;
     }
