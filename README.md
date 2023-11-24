@@ -1,5 +1,7 @@
 # JS Work Book
 
+![screenshot](./screenshot.png)
+
 ## 概要
 
 -   社内勉強会で使用する基礎的な問題集
