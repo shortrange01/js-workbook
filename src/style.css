@@ -37,7 +37,7 @@ h1 {
 }
 
 #app {
-    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -114,4 +114,115 @@ button:focus-visible {
 .hint.show {
     opacity: 1;
     visibility: visible;
+}
+
+.countdown {
+    height: 62px;
+    margin-bottom: 20px;
+    font-size: 62px;
+    line-height: 1;
+}
+
+.countdown-btns {
+    margin-bottom: 20px;
+}
+
+.change {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change::after {
+    content: "☠️CHANGE☠️";
+    display: block;
+    color: hsl(0, 100%, 50%);
+    font-size: 240px;
+    font-weight: bold;
+    transform: rotate(-3deg) scale(0.5);
+    animation: 4s ease-out 0s 1 normal rotation;
+    outline: 50px solid #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.change::before {
+    content: "CHANGE";
+    position: absolute;
+    display: block;
+    color: #fff;
+    font-size: 400px;
+    font-weight: bold;
+    transform: rotate(-3deg) scale(0.5);
+    animation: 4s ease-out 0.1s 1 normal rotation;
+    opacity: 0.3;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-3deg) scale(0.5);
+    }
+    3% {
+        transform: rotate(3deg) scale(0.5);
+    }
+    6% {
+        transform: rotate(-3deg) scale(0.5);
+    }
+    9% {
+        transform: rotate(3deg) scale(0.5);
+    }
+    12% {
+        transform: rotate(-3deg) scale(0.5);
+    }
+    15% {
+        transform: rotate(3deg) scale(0.5);
+    }
+    18% {
+        transform: rotate(-3deg) scale(1);
+    }
+    21% {
+        transform: rotate(3deg) scale(1);
+    }
+    24% {
+        transform: rotate(-3deg) scale(1);
+    }
+    27% {
+        transform: rotate(3deg) scale(1);
+    }
+    30% {
+        transform: rotate(-3deg) scale(1);
+    }
+    33% {
+        transform: rotate(3deg) scale(1);
+    }
+    36% {
+        transform: rotate(-3deg) scale(0.9);
+    }
+    39% {
+        transform: rotate(3deg) scale(0.8);
+    }
+    42% {
+        transform: rotate(-3deg) scale(0.7);
+    }
+    45% {
+        transform: rotate(3deg) scale(0.6);
+    }
+    48% {
+        transform: rotate(-3deg) scale(0.5);
+    }
+    51% {
+        transform: rotate(3deg) scale(0.4);
+    }
+    60% {
+        transform: rotate(1080deg) scale(2);
+    }
+    70% {
+        transform: rotate(1080deg) scale(0.7);
+    }
+    100% {
+        transform: rotate(1077deg) scale(0.5);
+    }
 }
