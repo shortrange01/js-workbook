@@ -2,7 +2,7 @@ import dataList from "./config/data.json";
 import { answer } from "./answer";
 import crypto from "crypto-js";
 
-interface workData {
+interface WorkData {
     id: string;
     title: string;
     description: string;
@@ -11,60 +11,41 @@ interface workData {
 }
 
 export class Work {
-    private id: string;
+    private data: WorkData | undefined;
 
     constructor(id: string) {
-        this.id = id;
+        this.data = dataList.find((data) => data.id === id);
     }
 
-    get workData(): workData | undefined {
-        return dataList
-            .filter((data) => {
-                return data.id === this.id;
-            })
-            .shift();
+    private transformList(list: string[], encrypt: boolean): string[] {
+        const key = import.meta.env.VITE_AES_KEY;
+        return list.map((item) =>
+            encrypt ? crypto.AES.encrypt(item, key).toString() : crypto.AES.decrypt(item, key).toString(crypto.enc.Utf8)
+        );
     }
 
     get title(): string {
-        if (!this.workData) return "The question does not exist.";
-        return this.workData.title;
+        return this.data?.title || "The question does not exist.";
     }
 
-    get description() {
-        if (!this.workData) return "Check the id of the data.";
-        return this.workData!.description;
+    get description(): string {
+        return this.data?.description || "Check the id of the data.";
     }
 
     get decryptQuestions(): string[][] {
-        if (!this.workData) return [[""]];
-        return this.workData.data.map((questionList: string[]): string[] => {
-            return questionList.map((question: string): string => {
-                return crypto.AES.decrypt(question, import.meta.env.VITE_AES_KEY).toString(crypto.enc.Utf8);
-            });
-        });
+        return this.data?.data.map((questionList) => this.transformList(questionList, false)) || [[""]];
     }
 
     get encryptQuestions(): string[][] {
-        if (!this.workData) return [[""]];
-        return this.workData.data.map((questionList: string[]): string[] => {
-            return questionList.map((question: string): string => {
-                return crypto.AES.encrypt(question, import.meta.env.VITE_AES_KEY).toString();
-            });
-        });
+        return this.data?.data.map((questionList) => this.transformList(questionList, true)) || [[""]];
     }
 
     get decryptAnswers(): string[] {
-        if (!this.workData) return [""];
-        return this.workData.answer.map((answer: string): string => {
-            return crypto.AES.decrypt(answer, import.meta.env.VITE_AES_KEY).toString(crypto.enc.Utf8);
-        });
+        return this.transformList(this.data?.answer || [""], false);
     }
 
     get encryptAnswers(): string[] {
-        if (!this.workData) return [""];
-        return this.workData.answer.map((answer: string): string => {
-            return crypto.AES.encrypt(answer, import.meta.env.VITE_AES_KEY).toString();
-        });
+        return this.transformList(this.data?.answer || [""], true);
     }
 
     get result(): string | void {
@@ -72,10 +53,6 @@ export class Work {
     }
 
     get comparison(): boolean[] {
-        const comparison = [];
-        for (let i = 0; i < this.decryptQuestions.length; i++) {
-            comparison.push(answer(this.decryptQuestions[i]) === this.decryptAnswers[i]);
-        }
-        return comparison;
+        return this.decryptQuestions.map((question, index) => answer(question) === this.decryptAnswers[index]);
     }
 }
